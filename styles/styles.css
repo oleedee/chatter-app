@@ -523,7 +523,7 @@ ul {
 @media (max-width: 1500px) {
 
     .sidebar {
-        width: minmax(200px, 1fr);
+        width: 1fr;
         align-items: flex-end;     
         padding-right: 5px;
     }
@@ -558,8 +558,17 @@ ul {
     }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
+    
+    .sidebar {
+        width: 70px;
+    }
+
     .scrollable {
-        grid-template-columns: 700px;
+        grid-template-columns: 1fr;
+    }
+
+    .trending {
+        display: none;
     }
 }
