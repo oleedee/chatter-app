@@ -1,0 +1,582 @@
+<head>
+    <!DOCTYPE html>
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <title>Chatter | Chat Now</title>
+
+</head>
+
+
+<body>
+    
+    <main class="app-content">
+        <nav class="sidebar">
+            <ul>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    Home
+                </button>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Explore
+                </button>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                    </svg>
+                    Notifications
+                </button>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                    </svg>
+                    Messages
+                </button>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    Profile
+                </button>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
+                    </svg>
+                    Settings
+                </button>
+                <button>
+                    <svg class="sidebar-button-icon" viewBox="0 0 24 24">
+                        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    More
+            </ul>
+
+            <button class="sidebar-post-button">Create Post</button>
+
+            <section class="sidebar-profile-section">
+                <img class="sidebar-pfp" src="/assets/img2.jpg"></img>
+
+                <div class="sidebar-user-section">
+                    <div>oleedee</div>
+                    <div>@oleedee</div>
+                </div>
+
+                <svg class="sidebar-settings" viewBox="0 0 24 24">
+                    <path d="M6 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z"/>
+                </svg>
+            </section>
+
+        </nav>
+
+        <div class="scrollable">
+            <section class="timeline">
+
+                <header class="timeline-type">
+                        <button>For you</button>
+                        <button>Following</button>
+                </header>
+
+            <ul class="posts">
+                <article class="post">
+                    <img class="post-pfp" src="/assets/img2.jpg"></img>
+                    <header class="post-content">
+                        <ul class="post-content-postdata">
+                            <h1 class="post-content-postdata-poster">oleedee</h1>
+                            <h1 class="post-content-postdata-posterid">@oleedee</h1>
+                            <span>·</span>
+                            <h1 class="post-content-postdata-time">5hr</h1>
+                        </ul>
+
+                        <p class="post-content-data">
+                            Hello, Welcome to Chatter!
+                        </p>
+
+                        <ul class="post-content-images">
+                        </ul>
+
+
+                        <ul class="post-content-interactions">
+
+                            <button class="post-content-button" id="comment">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 2c-4.4 0-8 3.1-8 7 0 2.4 1.2 4.5 3.2 5.9L4 17l3.7-1.4c.7.1 1.5.2 2.3.2 4.4 0 8-3.1 8-7s-3.6-7-8-7zm0 12c-.6 0-1.2-.1-1.8-.2L6 15l.8-1.6C5.5 12.6 4 10.9 4 9c0-2.8 2.7-5 6-5s6 2.2 6 5-2.7 5-6 5z" ></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M6.5 3.5L4 6L6.5 8.5 M4 6H12.5C14.157 6 15.5 7.343 15.5 9V10 M13.5 16.5L16 14L13.5 11.5 M16 14H7.5C5.843 14 4.5 12.657 4.5 11V10"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                <path d="M10 17.5l-1.45-1.32C5.4 12.78 2 9.69 2 6.5 2 4.5 3.5 3 5.5 3c1.54 0 3.04.99 3.57 2.36h1.87C11.46 3.99 12.96 3 14.5 3 16.5 3 18 4.5 18 6.5c0 3.19-3.4 6.28-6.55 9.68L10 17.5z"></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 3C5.5 3 1.73 6.11 0 10.5 1.73 14.89 5.5 18 10 18s8.27-3.11 10-7.5C18.27 6.11 14.5 3 10 3zm0 12c-2.5 0-4.5-2-4.5-4.5S7.5 6 10 6s4.5 2 4.5 4.5S12.5 15 10 15z"/>
+                                    <circle cx="10" cy="10.5" r="2"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+                            
+                        </ul>
+                    </header>
+                </article>    
+                
+                
+<article class="post">
+                    <img class="post-pfp" src="/assets/img2.jpg"></img>
+                    <header class="post-content">
+                        <ul class="post-content-postdata">
+                            <h1 class="post-content-postdata-poster">oleedee</h1>
+                            <h1 class="post-content-postdata-posterid">@oleedee</h1>
+                            <span>·</span>
+                            <h1 class="post-content-postdata-time">5hr</h1>
+                        </ul>
+
+                        <p class="post-content-data">
+                            Check out this image.
+                        </p>
+
+                        <ul class="post-content-images count-1">
+                            <img class="post-content-image" src="/assets/img4.jpg">
+                        </ul>
+
+
+                        <ul class="post-content-interactions">
+
+                            <button class="post-content-button" id="comment">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 2c-4.4 0-8 3.1-8 7 0 2.4 1.2 4.5 3.2 5.9L4 17l3.7-1.4c.7.1 1.5.2 2.3.2 4.4 0 8-3.1 8-7s-3.6-7-8-7zm0 12c-.6 0-1.2-.1-1.8-.2L6 15l.8-1.6C5.5 12.6 4 10.9 4 9c0-2.8 2.7-5 6-5s6 2.2 6 5-2.7 5-6 5z" ></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M6.5 3.5L4 6L6.5 8.5 M4 6H12.5C14.157 6 15.5 7.343 15.5 9V10 M13.5 16.5L16 14L13.5 11.5 M16 14H7.5C5.843 14 4.5 12.657 4.5 11V10"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                <path d="M10 17.5l-1.45-1.32C5.4 12.78 2 9.69 2 6.5 2 4.5 3.5 3 5.5 3c1.54 0 3.04.99 3.57 2.36h1.87C11.46 3.99 12.96 3 14.5 3 16.5 3 18 4.5 18 6.5c0 3.19-3.4 6.28-6.55 9.68L10 17.5z"></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 3C5.5 3 1.73 6.11 0 10.5 1.73 14.89 5.5 18 10 18s8.27-3.11 10-7.5C18.27 6.11 14.5 3 10 3zm0 12c-2.5 0-4.5-2-4.5-4.5S7.5 6 10 6s4.5 2 4.5 4.5S12.5 15 10 15z"/>
+                                    <circle cx="10" cy="10.5" r="2"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+                            
+                        </ul>
+                    </header>
+                </article> 
+
+
+<article class="post">
+                    <img class="post-pfp" src="/assets/img2.jpg"></img>
+                    <header class="post-content">
+                        <ul class="post-content-postdata">
+                            <h1 class="post-content-postdata-poster">oleedee</h1>
+                            <h1 class="post-content-postdata-posterid">@oleedee</h1>
+                            <span>·</span>
+                            <h1 class="post-content-postdata-time">5hr</h1>
+                        </ul>
+
+                        <p class="post-content-data">
+                            More images, extremely concerning.
+                        </p>
+
+                        <ul class="post-content-images count-4">
+                            <img class="post-content-image" src="/assets/img6.jpg">
+                            <img class="post-content-image" src="/assets/img7.jpg">
+                            <img class="post-content-image" src="/assets/img8.jpg">
+                            <img class="post-content-image" src="/assets/img9.jpg">
+                        </ul>
+
+
+                        <ul class="post-content-interactions">
+
+                            <button class="post-content-button" id="comment">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 2c-4.4 0-8 3.1-8 7 0 2.4 1.2 4.5 3.2 5.9L4 17l3.7-1.4c.7.1 1.5.2 2.3.2 4.4 0 8-3.1 8-7s-3.6-7-8-7zm0 12c-.6 0-1.2-.1-1.8-.2L6 15l.8-1.6C5.5 12.6 4 10.9 4 9c0-2.8 2.7-5 6-5s6 2.2 6 5-2.7 5-6 5z" ></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M6.5 3.5L4 6L6.5 8.5 M4 6H12.5C14.157 6 15.5 7.343 15.5 9V10 M13.5 16.5L16 14L13.5 11.5 M16 14H7.5C5.843 14 4.5 12.657 4.5 11V10"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                <path d="M10 17.5l-1.45-1.32C5.4 12.78 2 9.69 2 6.5 2 4.5 3.5 3 5.5 3c1.54 0 3.04.99 3.57 2.36h1.87C11.46 3.99 12.96 3 14.5 3 16.5 3 18 4.5 18 6.5c0 3.19-3.4 6.28-6.55 9.68L10 17.5z"></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 3C5.5 3 1.73 6.11 0 10.5 1.73 14.89 5.5 18 10 18s8.27-3.11 10-7.5C18.27 6.11 14.5 3 10 3zm0 12c-2.5 0-4.5-2-4.5-4.5S7.5 6 10 6s4.5 2 4.5 4.5S12.5 15 10 15z"/>
+                                    <circle cx="10" cy="10.5" r="2"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+                            
+                        </ul>
+                    </header>
+                </article> 
+
+<article class="post">
+                    <img class="post-pfp" src="/assets/img2.jpg"></img>
+                    <header class="post-content">
+                        <ul class="post-content-postdata">
+                            <h1 class="post-content-postdata-poster">oleedee</h1>
+                            <h1 class="post-content-postdata-posterid">@oleedee</h1>
+                            <span>·</span>
+                            <h1 class="post-content-postdata-time">5hr</h1>
+                        </ul>
+
+                        <p class="post-content-data">
+                            <a href="https://github.com/oleedee">https://github.com/oleedee</a>
+                        </p>
+
+                        <ul class="post-content-images">
+                        </ul>
+
+
+                        <ul class="post-content-interactions">
+
+                            <button class="post-content-button" id="comment">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 2c-4.4 0-8 3.1-8 7 0 2.4 1.2 4.5 3.2 5.9L4 17l3.7-1.4c.7.1 1.5.2 2.3.2 4.4 0 8-3.1 8-7s-3.6-7-8-7zm0 12c-.6 0-1.2-.1-1.8-.2L6 15l.8-1.6C5.5 12.6 4 10.9 4 9c0-2.8 2.7-5 6-5s6 2.2 6 5-2.7 5-6 5z" ></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M6.5 3.5L4 6L6.5 8.5 M4 6H12.5C14.157 6 15.5 7.343 15.5 9V10 M13.5 16.5L16 14L13.5 11.5 M16 14H7.5C5.843 14 4.5 12.657 4.5 11V10"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                <path d="M10 17.5l-1.45-1.32C5.4 12.78 2 9.69 2 6.5 2 4.5 3.5 3 5.5 3c1.54 0 3.04.99 3.57 2.36h1.87C11.46 3.99 12.96 3 14.5 3 16.5 3 18 4.5 18 6.5c0 3.19-3.4 6.28-6.55 9.68L10 17.5z"></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 3C5.5 3 1.73 6.11 0 10.5 1.73 14.89 5.5 18 10 18s8.27-3.11 10-7.5C18.27 6.11 14.5 3 10 3zm0 12c-2.5 0-4.5-2-4.5-4.5S7.5 6 10 6s4.5 2 4.5 4.5S12.5 15 10 15z"/>
+                                    <circle cx="10" cy="10.5" r="2"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+                            
+                        </ul>
+                    </header>
+                </article> 
+
+<article class="post">
+                    <img class="post-pfp" src="/assets/img2.jpg"></img>
+                    <header class="post-content">
+                        <ul class="post-content-postdata">
+                            <h1 class="post-content-postdata-poster">oleedee</h1>
+                            <h1 class="post-content-postdata-posterid">@oleedee</h1>
+                            <span>·</span>
+                            <h1 class="post-content-postdata-time">5hr</h1>
+                        </ul>
+
+                        <p class="post-content-data">
+                            <span>Thank you for visiting. c:</span>
+                        </p>
+
+                        <ul class="post-content-images">
+                        </ul>
+
+
+                        <ul class="post-content-interactions">
+
+                            <button class="post-content-button" id="comment">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 2c-4.4 0-8 3.1-8 7 0 2.4 1.2 4.5 3.2 5.9L4 17l3.7-1.4c.7.1 1.5.2 2.3.2 4.4 0 8-3.1 8-7s-3.6-7-8-7zm0 12c-.6 0-1.2-.1-1.8-.2L6 15l.8-1.6C5.5 12.6 4 10.9 4 9c0-2.8 2.7-5 6-5s6 2.2 6 5-2.7 5-6 5z" ></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M6.5 3.5L4 6L6.5 8.5 M4 6H12.5C14.157 6 15.5 7.343 15.5 9V10 M13.5 16.5L16 14L13.5 11.5 M16 14H7.5C5.843 14 4.5 12.657 4.5 11V10"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                <path d="M10 17.5l-1.45-1.32C5.4 12.78 2 9.69 2 6.5 2 4.5 3.5 3 5.5 3c1.54 0 3.04.99 3.57 2.36h1.87C11.46 3.99 12.96 3 14.5 3 16.5 3 18 4.5 18 6.5c0 3.19-3.4 6.28-6.55 9.68L10 17.5z"></path>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+
+                            <button class="post-content-button">
+                                <svg class="post-content-icon" viewBox="0 0 28 28">
+                                    <path d="M10 3C5.5 3 1.73 6.11 0 10.5 1.73 14.89 5.5 18 10 18s8.27-3.11 10-7.5C18.27 6.11 14.5 3 10 3zm0 12c-2.5 0-4.5-2-4.5-4.5S7.5 6 10 6s4.5 2 4.5 4.5S12.5 15 10 15z"/>
+                                    <circle cx="10" cy="10.5" r="2"/>
+                                </svg>
+                                
+                                <span class="post-content-button-statistic">
+                                    10
+                                </span>
+                            </button>
+                            
+                        </ul>
+                    </header>
+                </article> 
+
+
+
+            </ul>
+            
+        </section>
+
+            <section class="trending">
+                
+                
+
+
+                <form>
+                    <div class="search-container">
+                        <label for="search"></label>
+                        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <input class="search-posts" type="search" placeholder="Search">
+                    </div>
+                </form>
+
+                <article class="premium-section">
+                    <h2>Subscribe to Premium</h2>
+                    <p>Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                    <button>Subscribe</button>
+                </article>
+
+                <article class="trending-section">
+                    <h1 class="trending-header">What's happening</h1>
+
+                    <div class="top-story">
+                        <img class="top-story-image" src="/assets/img5.jpg">
+                        <div class="top-story-details">
+                            <h2>Phillies at Nationals</h2>
+                            <p>Starts at 3:45 PM</p>
+                        </div>
+                    </div>
+
+                    <ul class="trending-list">
+                        <li>
+                            <div class="trending-card">
+                                <div class="trending-content">
+                                    <h1>Trending in the United States</h1>
+                                    <span>HTML</span>
+                                    <div>1.8M Posts</div>
+                                </div>
+
+                                <svg class="trending-options"viewBox="0 0 24 24">
+                                    <path d="M6 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z"/>
+                                </svg>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="trending-card">
+                                <div class="trending-content">
+                                    <h1>Trending in the Australia</h1>
+                                    <span>CSS</span>
+                                    <div>200+ Posts</div>
+                                </div>
+
+                                <svg class="trending-options"viewBox="0 0 24 24">
+                                    <path d="M6 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z"/>
+                                </svg>
+                            </div>
+                        </li>
+
+
+
+                        <li>
+                            <div class="trending-card">
+                                <div class="trending-content">
+                                    <h1>Trending on Chatter</h1>
+                                    <span>JavaScript</span>
+                                    <div>1B Posts</div>
+                                </div>
+
+                                <svg class="trending-options"viewBox="0 0 24 24">
+                                    <path d="M6 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm6 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2z"/>
+                                </svg>
+                            </div>
+                        </li>
+
+                        
+                    </ul>
+
+                </article>
+
+
+                <article class="who-to-follow">
+                    <h2 class="who-to-follow-header">Who to follow</h2>
+
+                    <ul class="follow-cards">
+                        <li>
+                            <div class="follow-card">
+                                <img src="assets/img3.png" class="follow-acc-icon">
+                                <div class="follow-acc-id">
+                                    <div class="follow-acc-name">OD</div>
+                                    <div class="follow-acc-id">@OD123</div>
+                                </div>
+                                <button class="who-to-follow-button">Follow</button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="follow-card">
+                                <img src="assets/img1.jpg" class="follow-acc-icon">
+                                <div class="follow-acc-id">
+                                    <div class="follow-acc-name">HTMLCSS</div>
+                                    <div class="follow-acc-id">@HTMLCSS</div>
+                                </div>
+                                <button class="who-to-follow-button">Follow</button>
+                            </div>
+                        </li>
+                    </ul>
+
+                </article>
+
+                <article class="tos">
+                    <ul class="tos-list">
+                        <li>
+                            <a>Terms of Service</a>
+                        </li>
+
+                        <li>
+                            <a>Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a>Cookie Policy</a>
+                        </li>
+
+                        <li>
+                            <a>Accessibility</a>
+                        </li>
+
+                        <li>
+                            <a>Ads info</a>
+                        </li>
+
+                        <li>
+                            <a>More</a>
+                        </li>
+
+                        <li>
+                            <a>@ 2025 Chatter</a>
+                        </li>
+                    </ul>
+                </article>
+
+
+            </section>
+        </div>
+    </main>
+
+</body>

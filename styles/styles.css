@@ -1,0 +1,565 @@
+:root {
+    color-scheme: dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.app-content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    color: white;
+}
+
+.scrollable {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    overflow-y: auto;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 1fr;
+    padding: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    outline: 1px solid rgb(255, 255, 255, .2);
+    z-index: 10;    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar-button-icon {
+    min-width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    fill: white;
+}
+
+.sidebar-post-button {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.sidebar-post-button:hover {
+    background-color: rgb(255, 255, 255, .8);
+}
+
+.sidebar ul button {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 250px;
+    font-size: 18px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.sidebar ul button:hover {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.sidebar-profile-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 150px 50px;
+    width: 260px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: auto;
+}
+.sidebar-profile-section:hover {
+    background-color: rgb(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.sidebar-pfp {
+    background-color: rgb(248, 248, 248);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.sidebar-user-section {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar-settings {
+    fill: white;
+    height: 20px;
+    width: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.timeline-type {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    font-size: 10px;
+    align-items: center;
+    outline: 1px solid rgb(255, 255, 255, .2);
+    background: rgb(0,0,0,.2);
+    backdrop-filter: blur(5px);
+}
+
+.timeline-type button {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.timeline-type button:hover {
+    background-color: rgb(255,255,255,.1);
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding: 10px;
+    outline: 1px solid rgb(255, 255, 255, .2);
+    cursor: pointer;
+}
+
+.post:hover {
+    background-color: rgb(255, 255, 255,.035);
+}
+
+.post-pfp {
+    background-color: rgb(248, 248, 248);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content-postdata {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 5px;
+    font-size: 12px;
+    color: rgb(106, 106, 106);
+}
+
+.post-content-postdata-poster {
+    color: white;
+}
+
+.post-content-postdata-posterid {
+    font-weight: normal;
+}
+
+.post-content-postdata-time {
+    font-weight: normal;
+}
+
+.post-content-data {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.post-content-interactions {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.post-content-button {
+    display: flex;
+    height: 20px;
+    width: 40px;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.post-content-button-statistic {
+    transform: translateX(-3px);
+}
+
+.post-content-icon {
+    width: 20px;
+    height: 20px;
+    fill: rgb(255, 255, 255);
+    transform: translateY(3px);
+}
+
+.post-content-data {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post-content-images {
+    display: grid;
+    border-radius: 10px;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.post-content-images:empty {
+    display: none;
+}
+
+.post-content-images.count-1 {
+    grid-template-columns: 1fr;
+}
+
+.post-content-images.count-2 {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+}
+
+.post-content-images.count-3 { 
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.post-content-images.count-3 li:first-child {
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.post-content-images.count-3 li:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.post-content-images.count-3 li:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.post-content-images.count-4 { 
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+}
+
+.post-content-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending {
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid rgb(255, 255, 255, .2);
+    z-index: 10;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+.trending-content h1,
+.trending-content div {
+    font-weight: 1;
+    color: rgb(106, 106, 106);
+    font-size: 10px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left:14px;
+    top: 13px;
+    width: 15px;
+    height: 15px;
+}
+
+.search-posts {
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 35px;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid rgb(255, 255, 255, .2);
+}
+
+.premium-section {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    justify-content: flex-start;
+    outline: 1px solid rgb(255, 255, 255, .2); 
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.premium-section button {
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    background-color: rgb(22, 144, 244);
+    border: none;
+    cursor: pointer;
+}
+
+.premium-section button:hover {
+    background-color: rgb(18, 110, 185);
+}
+
+.premium-section h2 {
+    font-size: 20px;
+}
+
+.premium-section p {
+    font-size: 14px;
+}
+
+.trending-section {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    outline: 1px solid rgb(255, 255, 255, .2); 
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.trending-header {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.top-story {
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: 75px 1fr;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.top-story:hover {
+    background-color: rgb(255, 255, 255,.035);
+}
+
+.top-story-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.top-story-details {
+    font-size: 10px;
+}
+
+.trending-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    cursor: pointer;
+    height: 50px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.trending-card:hover {
+    background-color: rgb(255, 255, 255,.035);
+}
+
+.trending-options {
+    fill: rgb(106, 106, 106);
+    height: 20px;
+    width: 20px;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.who-to-follow {
+    width: 300px;
+    gap: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid rgb(255, 255, 255, .2); 
+}
+
+.who-to-follow-header {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.follow-cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.follow-card {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50px 1fr 85px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.follow-acc-name {
+    font-size: 10px;
+    color: white;
+}
+
+.follow-acc-id {
+    font-size: 10px;
+    color: rgb(106, 106, 106);
+}
+
+.follow-card:hover {
+    background-color: rgb(255, 255, 255,.035);
+}
+
+.follow-acc-icon {
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.follow-card button {
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.who-to-follow-button {
+    outline: none;
+    color: black;
+    background-color: white;
+}
+
+.tos-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    font-size: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 1500px) {
+
+    .sidebar {
+        width: minmax(200px, 1fr);
+        align-items: flex-end;     
+        padding-right: 5px;
+    }
+
+    .sidebar ul button {
+        color: transparent;
+        width: 60px;
+    }
+
+    .sidebar-button-icon {
+        margin-right: 0px;
+
+    }
+
+    .sidebar-post-button {
+        margin-right: 10px;
+        width: 40px;
+        border-radius: 50px;
+        color: transparent;
+    }
+
+    .sidebar-profile-section {
+        margin-right: 10px;
+        grid-template-columns: 50px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .sidebar-profile-section > *:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .scrollable {
+        grid-template-columns: 700px;
+    }
+}
